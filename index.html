@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .gallery {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    
-    <div class="loco">
-        <img src="/Lunchtimepic.png" alt="business lunch picture">
+    <div class="gallery">
+        <img src="Abess.jpg" alt="Image 1">
+        <img src="CNB.png" alt="Image 2">
+        <img src="Carrott.jpg" alt="Image 3">
+        <img src="Lunchtimepic.png" alt="Image 4">
+         <img src="25480.png" alt="Image 5">
     </div>
      <div class="loco">
         <img src="/RealSolveAiLogo.png" alt="business lunch picture">
